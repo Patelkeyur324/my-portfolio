@@ -104,49 +104,63 @@ export const processSteps = [
 
 export const projects = [
   {
-    title: "File-Converter-Tool",
+    title: "E-Commerce Storefront",
     description:
-      "A MERN stack file converter supporting multiple formats with optimized performance and secure data handling.",
+      "A fully responsive online store with cart, filtering, and checkout flow. Built with Next.js and Tailwind CSS.",
     tags: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
   },
   {
-    title: "Developer Portfolio v1",
+    title: "Task Management App",
     description:
-      "My first portfolio site — minimalist design with smooth scroll animations and a dark theme.",
-    tags: ["React", "Tailwind CSS", "JavaScript", "Framer Motion"],
+      "A drag-and-drop kanban board with real-time updates, user auth, and team collaboration features.",
+    tags: ["React", "Firebase", "Tailwind"],
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
   },
   {
-    title: "Real-Time Chat App",
+    title: "Developer Portfolio v1",
     description:
-      "A real-time messaging app with user authentication, group chats, and file sharing capabilities.",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB", "Tailwind", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/Patelkeyur324/real-Time-chat-app",
-    featured: true,
-  },
-
-  {
-    title: "VirtualR Landing Page",
-    description:
-      "Built by following a YouTube tutorial step by step, then extended with custom Framer Motion animations independently beyond what the video covered.",
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/Patelkeyur324/VirtualR",
-    featured: false,
-  },
-  {
-    title: "Animal Healthcare",
-    description:
-      "Built my first college project — a frontend-only animal healthcare app built independently from scratch.",
+      "My first portfolio site — minimalist design with smooth scroll animations and a dark theme.",
     tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "#",
-    githubUrl: "https://github.com/Patelkeyur324/Animal-Healthcare",
+    githubUrl: "#",
     featured: false,
   },
+  {
+    title: "Weather Dashboard",
+    description:
+      "A location-aware weather app with 7-day forecasts, charts, and a clean data visualization layer.",
+    tags: ["React", "Chart.js", "OpenWeather API"],
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: true,
+  },
+  {
+    title: "Blog Platform",
+    description:
+      "A Markdown-powered blog with syntax highlighting, dark mode, and RSS feed support.",
+    tags: ["Next.js", "MDX", "TypeScript"],
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    title: "UI Component Library",
+    description:
+      "A personal design system — buttons, forms, modals, and more — documented with Storybook.",
+    tags: ["React", "TypeScript", "Storybook"],
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+];
+
+export const socialLinks = [
+  { label: "GitHub", href: "#", icon: "github" },
+  { label: "LinkedIn", href: "#", icon: "linkedin" },
+  { label: "Twitter", href: "#", icon: "twitter" },
 ];

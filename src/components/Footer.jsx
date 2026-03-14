@@ -3,9 +3,9 @@ import { Github, Linkedin, Mail, ArrowUpRight, Instagram } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
-    { label: "GitHub", href: "https://github.com/Patelkeyur324", icon: <Github size={18} /> },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/keyur-patel-185a3024b", icon: <Linkedin size={18} /> },
-    { label: "Instagram", href: "https://www.instagram.com/keyur__patel_32", icon: <Instagram size={18} /> },
+    { label: "GitHub", href: "#", icon: <Github size={18} /> },
+    { label: "LinkedIn", href: "#", icon: <Linkedin size={18} /> },
+    { label: "Instagram", href: "#", icon: <Instagram size={18} /> },
   ];
 
   return (
@@ -46,7 +46,7 @@ const Footer = () => {
           collaborations. My inbox is always open.
         </motion.p>
         <motion.a
-          href="mailto:keyurpatel322004@email.com"
+          href="mailto:your@email.com"
           className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-700 py-3 px-8 rounded-md font-semibold hover:opacity-90 transition-opacity text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
         <span className="text-neutral-500 text-sm">
-          © {new Date().getFullYear()} Keyur Patel. Built with React & Tailwind.
+          © {new Date().getFullYear()} Your Name. Built with React & Tailwind.
         </span>
 
         {/* Social links */}

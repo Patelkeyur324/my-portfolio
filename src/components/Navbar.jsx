@@ -28,7 +28,7 @@ const Navbar = () => {
   <img src={profileImg} className="w-9 h-9 rounded-full object-cover mr-3" />
   <span className="text-xl font-bold tracking-tight">
     <span className="bg-gradient-to-r from-orange-400 to-orange-600 text-transparent bg-clip-text">{"<"}</span>
-    Keyur Patel
+    Your Name
     <span className="bg-gradient-to-r from-orange-400 to-orange-600 text-transparent bg-clip-text">{"/>"}</span>
   </span>
 </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="mailto:keyurpatel322004@email.com"
+              href="mailto:your@email.com"
               className="py-2 px-4 border border-neutral-600 rounded-md text-neutral-300 hover:border-orange-500 hover:text-orange-400 transition-all duration-200"
             >
               Say Hello 👋
@@ -89,7 +89,7 @@ const Navbar = () => {
             </ul>
             <div className="flex gap-4">
               <a
-                href="mailto:keyurpatel322004@email.com"
+                href="mailto:your@email.com"
                 className="py-2 px-4 border border-neutral-600 rounded-md"
               >
                 Say Hello 👋

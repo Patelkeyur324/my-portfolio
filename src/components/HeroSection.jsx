@@ -42,7 +42,7 @@ const HeroSection = () => {
         transition={{ duration: 0.7, delay: 0.1 }}
         viewport={{ once: false }}
       >
-        Keyur Patel
+        Your Name
       </motion.h1>
 
       {/* Title */}
