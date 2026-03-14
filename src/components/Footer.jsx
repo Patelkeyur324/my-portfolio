@@ -88,17 +88,17 @@ const Footer = () => {
         </span>
 
         {/* Contact info */}
-        <div className="flex items-center gap-4 text-sm text-neutral-500">
-          <a href="mailto:keyurpatel322004@email.com" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
-            <Mail size={14} />
-            keyurpatel322004@email.com
-          </a>
-          <span>|</span>
-          <a href="tel:+917859892741" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
-            <Phone size={14} />
-            +91 78598 92741
-          </a>
-        </div>
+        <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-neutral-500">
+  <a href="mailto:keyurpatel322004@email.com" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
+    <Mail size={14} />
+    keyurpatel322004@email.com
+  </a>
+  <span className="hidden sm:block">|</span>
+  <a href="tel:+917859892741" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
+    <Phone size={14} />
+    +91 78598 92741
+  </a>
+</div>
 
         {/* Social links */}
         <div className="flex items-center gap-3">
