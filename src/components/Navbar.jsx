@@ -56,7 +56,9 @@ const Navbar = () => {
               Say Hello 👋
             </a>
             <a
-              href="#"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-orange-500 to-orange-700 py-2 px-4 rounded-md font-medium hover:opacity-90 transition-opacity"
             >
               Resume
@@ -95,7 +97,9 @@ const Navbar = () => {
                 Say Hello 👋
               </a>
               <a
-                href="#"
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="py-2 px-4 bg-gradient-to-r from-orange-500 to-orange-700 rounded-md"
               >
                 Resume
