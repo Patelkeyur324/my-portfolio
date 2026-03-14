@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowUpRight, Instagram } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUpRight, Instagram, Phone } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
@@ -22,41 +22,60 @@ const Footer = () => {
           Contact
         </span>
         <div className="overflow-hidden">
-                    <motion.h2
-                        className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
-                        initial={{ x: -100 }}
-                        whileInView={{ x: 0 }}
-                        transition={{ duration: 0.9 }}
-                        viewport={{ once: false, amount: 0.5 }}
-                    >
-          Let's build something{" "}
-          <span className="bg-gradient-to-r from-orange-400 to-red-500 text-transparent bg-clip-text">
-            together
-          </span>
-        </motion.h2>
+          <motion.h2
+            className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: false, amount: 0.5 }}
+          >
+            Let's build something{" "}
+            <span className="bg-gradient-to-r from-orange-400 to-red-500 text-transparent bg-clip-text">
+              together
+            </span>
+          </motion.h2>
         </div>
-        <motion.p 
+        <motion.p
           className="text-neutral-400 max-w-md mx-auto text-lg mb-8"
           initial={{ x: 100 }}
-                        whileInView={{ x: 0 }}
-                        transition={{ duration: 0.9 }}
-                        viewport={{ once: false, amount: 0.5 }}
-          >
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.9 }}
+          viewport={{ once: false, amount: 0.5 }}
+        >
           Open to freelance projects, full-time roles, and interesting
           collaborations. My inbox is always open.
         </motion.p>
-        <motion.a
-          href="mailto:keyurpatel322004@email.com"
-          className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-700 py-3 px-8 rounded-md font-semibold hover:opacity-90 transition-opacity text-white"
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: false, amount: 0.5 }}
         >
-          <Mail size={18} />
-          Say Hello
-          <ArrowUpRight size={16} />
-        </motion.a>
+          <motion.a
+            href="mailto:keyurpatel322004@email.com"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-700 py-3 px-8 rounded-md font-semibold text-white"
+            whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(249, 115, 22, 0.6)" }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <Mail size={18} />
+            Say Hello
+            <ArrowUpRight size={16} />
+          </motion.a>
+
+          <motion.a
+            href="tel:+917859892741"
+            className="inline-flex items-center gap-2 border border-neutral-600 py-3 px-8 rounded-md font-semibold text-neutral-300"
+            whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(255, 255, 255, 0.15)" }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <Phone size={18} />
+            Call Me
+            <ArrowUpRight size={16} />
+          </motion.a>
+        </motion.div>
       </motion.div>
 
       {/* Divider */}
@@ -67,6 +86,19 @@ const Footer = () => {
         <span className="text-neutral-500 text-sm">
           © {new Date().getFullYear()} Keyur Patel. Built with React & Tailwind.
         </span>
+
+        {/* Contact info */}
+        <div className="flex items-center gap-4 text-sm text-neutral-500">
+          <a href="mailto:keyurpatel322004@email.com" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
+            <Mail size={14} />
+            keyurpatel322004@email.com
+          </a>
+          <span>|</span>
+          <a href="tel:+917859892741" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
+            <Phone size={14} />
+            +91 78598 92741
+          </a>
+        </div>
 
         {/* Social links */}
         <div className="flex items-center gap-3">

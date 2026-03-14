@@ -31,7 +31,7 @@ const HeroSection = () => {
         viewport={{ once: false }}
       >
         <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse" />
-        Available for work
+        Available for Freelance
       </motion.div>
 
       {/* Name */}
