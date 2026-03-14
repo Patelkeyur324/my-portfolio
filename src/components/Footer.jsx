@@ -53,7 +53,7 @@ const Footer = () => {
           viewport={{ once: false, amount: 0.5 }}
         >
           <motion.a
-            href="mailto:keyurpatel322004@email.com"
+            href="mailto:keyurpatel322004@gmail.com"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-700 py-3 px-8 rounded-md font-semibold text-white"
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(249, 115, 22, 0.6)" }}
             whileTap={{ scale: 0.97 }}
@@ -89,9 +89,9 @@ const Footer = () => {
 
         {/* Contact info */}
         <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-neutral-500">
-  <a href="mailto:keyurpatel322004@email.com" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
+  <a href="mailto:keyurpatel322004@gmail.com" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
     <Mail size={14} />
-    keyurpatel322004@email.com
+    keyurpatel322004@gmail.com
   </a>
   <span className="hidden sm:block">|</span>
   <a href="tel:+917859892741" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">

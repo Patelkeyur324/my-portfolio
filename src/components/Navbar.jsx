@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="mailto:keyurpatel322004@email.com"
+              href="mailto:keyurpatel322004@gmail.com"
               className="py-2 px-4 border border-neutral-600 rounded-md text-neutral-300 hover:border-orange-500 hover:text-orange-400 transition-all duration-200"
             >
               Say Hello 👋
@@ -91,7 +91,7 @@ const Navbar = () => {
             </ul>
             <div className="flex gap-4">
               <a
-                href="mailto:keyurpatel322004@email.com"
+                href="mailto:keyurpatel322004@gmail.com"
                 className="py-2 px-4 border border-neutral-600 rounded-md"
               >
                 Say Hello 👋
