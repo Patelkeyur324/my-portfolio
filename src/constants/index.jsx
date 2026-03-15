@@ -109,7 +109,7 @@ export const projects = [
       "A MERN stack file converter supporting multiple formats with optimized performance and secure data handling.",
     tags: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Patelkeyur324/File-converter-tool",
     featured: true,
   },
   {
@@ -117,8 +117,8 @@ export const projects = [
     description:
       "My first portfolio site — minimalist design with smooth scroll animations and a dark theme.",
     tags: ["React", "Tailwind CSS", "JavaScript", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://keyur-patel-portfolio.vercel.app",
+    githubUrl: "https://github.com/Patelkeyur324/my-portfolio",
     featured: false,
   },
   {
@@ -126,7 +126,7 @@ export const projects = [
     description:
       "A real-time messaging app with user authentication, group chats, and file sharing capabilities.",
     tags: ["React", "Node.js", "Socket.io", "MongoDB", "Tailwind", "Framer Motion"],
-    liveUrl: "#",
+    liveUrl: "https://react-chat-app-chatterly.vercel.app/",
     githubUrl: "https://github.com/Patelkeyur324/real-Time-chat-app",
     featured: true,
   },
