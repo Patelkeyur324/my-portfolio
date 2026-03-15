@@ -80,6 +80,13 @@ const Testimonials = ({ id }) => {
               {/* Links */}
               <div className="flex gap-3 mt-auto">
                 <a
+                  href={project.liveUrl}
+                  className="flex items-center gap-1.5 text-sm text-orange-400 hover:text-orange-300 transition-colors font-medium"
+                >
+                  <ExternalLink size={14} />
+                  Live Demo
+                </a>
+                <a
                   href={project.githubUrl}
                   className="flex items-center gap-1.5 text-sm text-neutral-400 hover:text-neutral-200 transition-colors font-medium"
                 >
