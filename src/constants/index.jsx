@@ -111,15 +111,17 @@ export const projects = [
     liveUrl: "https://file-converter-tool-main.vercel.app",
     githubUrl: "https://github.com/Patelkeyur324/File-converter-tool",
     featured: true,
+    livedemo: true,
   },
   {
-    title: "Developer Portfolio v1",
+    title: "Developer Portfolio",
     description:
       "My first portfolio site — minimalist design with smooth scroll animations and a dark theme.",
     tags: ["React", "Tailwind CSS", "JavaScript", "Framer Motion"],
     liveUrl: "https://keyur-patel-portfolio.vercel.app",
     githubUrl: "https://github.com/Patelkeyur324/my-portfolio",
     featured: false,
+    livedemo: true,
   },
   {
     title: "Real-Time Chat App",
@@ -129,6 +131,7 @@ export const projects = [
     liveUrl: "https://react-chat-app-chatterly.vercel.app/",
     githubUrl: "https://github.com/Patelkeyur324/real-Time-chat-app",
     featured: true,
+    livedemo: true,
   },
 
   {
@@ -139,6 +142,7 @@ export const projects = [
     liveUrl: "#",
     githubUrl: "https://github.com/Patelkeyur324/VirtualR",
     featured: false,
+    livedemo: false,
   },
   {
     title: "Animal Healthcare",
@@ -148,5 +152,6 @@ export const projects = [
     liveUrl: "#",
     githubUrl: "https://github.com/Patelkeyur324/Animal-Healthcare",
     featured: false,
+    livedemo: false,
   },
 ];

@@ -5,13 +5,12 @@ import profileImg from "../assets/profile.jpg";
 const HeroSection = () => {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-[90vh] text-center px-4 overflow-hidden">
-
       {/* Subtle background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-[120px]" />
       </div>
 
-       {/* Profile Photo */}
+      {/* Profile Photo */}
       <motion.img
         src={profileImg}
         alt="profile"
@@ -36,7 +35,7 @@ const HeroSection = () => {
 
       {/* Name */}
       <motion.h1
-        className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight mb-4"
+        className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight mb-4 text-neutral-900 dark:text-neutral-100"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
@@ -47,7 +46,7 @@ const HeroSection = () => {
 
       {/* Title */}
       <motion.h2
-        className="text-2xl sm:text-4xl font-semibold mb-6"
+        className="text-2xl sm:text-4xl font-semibold mb-6 text-neutral-900 dark:text-neutral-100"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
@@ -60,7 +59,7 @@ const HeroSection = () => {
 
       {/* Bio */}
       <motion.p
-        className="max-w-2xl text-lg text-neutral-400 leading-relaxed mb-10"
+        className="max-w-2xl text-lg text-neutral-600 leading-relaxed mb-10 dark:text-neutral-400"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.35 }}
@@ -87,7 +86,7 @@ const HeroSection = () => {
         </a>
         <a
           href="#contact"
-          className="py-3 px-7 rounded-md border border-neutral-600 text-neutral-300 hover:border-orange-500 hover:text-orange-400 transition-all duration-200"
+          className="py-3 px-7 rounded-md border border-neutral-300 text-neutral-700 hover:border-orange-500 hover:text-orange-400 transition-all duration-200 dark:border-neutral-600 dark:text-neutral-300"
         >
           Get In Touch
         </a>
@@ -95,7 +94,7 @@ const HeroSection = () => {
 
       {/* Scroll hint */}
       <motion.div
-        className="mt-10 text-neutral-600 flex flex-col items-center gap-1"
+        className="mt-10 text-neutral-500 flex flex-col items-center gap-1 dark:text-neutral-600"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8 }}

@@ -4,7 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 const Testimonials = ({ id }) => {
   return (
-    <div id={id} className="mt-24 border-b border-neutral-800 pb-24">
+    <div id={id} className="mt-24 ">
       {/* Header */}
       <div className="text-center mb-16">
         <motion.span
@@ -16,20 +16,20 @@ const Testimonials = ({ id }) => {
         >
           Projects
         </motion.span>
-       <div className="overflow-hidden">
-  <motion.h2
-    className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
-    initial={{ x: -100 }}
-    whileInView={{ x: 0 }}
-    transition={{ duration: 0.9 }}
-    viewport={{ once: false, amount: 0.5 }}
-  >
-    Things I've{" "}
-    <span className="bg-gradient-to-r from-orange-400 to-red-500 text-transparent bg-clip-text">
-      built
-    </span>
-  </motion.h2>
-</div>
+        <div className="overflow-hidden">
+          <motion.h2
+            className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100"
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: false, amount: 0.5 }}
+          >
+            Things I've{" "}
+            <span className="bg-gradient-to-r from-orange-400 to-red-500 text-transparent bg-clip-text">
+              built
+            </span>
+          </motion.h2>
+        </div>
       </div>
 
       {/* Project Grid */}
@@ -43,11 +43,11 @@ const Testimonials = ({ id }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`group relative flex flex-col rounded-xl border bg-neutral-900/50 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-900/20 ${
+            className={`group relative flex flex-col rounded-xl border overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-900/20 ${
               project.featured
                 ? "border-orange-500/40"
-                : "border-neutral-800 hover:border-orange-500/30"
-            }`}
+                : "border-neutral-200 hover:border-orange-500/30 dark:border-neutral-800"
+            } bg-white/80 dark:bg-neutral-900/50`}
           >
             {/* Featured badge */}
             {project.featured && (
@@ -58,10 +58,10 @@ const Testimonials = ({ id }) => {
 
             {/* Card body */}
             <div className="p-6 flex flex-col flex-1">
-              <h3 className="text-xl font-semibold text-neutral-100 mb-2 pr-16">
+              <h3 className="text-xl font-semibold text-neutral-900 mb-2 pr-16 dark:text-neutral-100">
                 {project.title}
               </h3>
-              <p className="text-neutral-400 text-sm leading-relaxed flex-1 mb-5">
+              <p className="text-neutral-600 text-sm leading-relaxed flex-1 mb-5 dark:text-neutral-400">
                 {project.description}
               </p>
 
@@ -70,7 +70,7 @@ const Testimonials = ({ id }) => {
                 {project.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="text-xs bg-neutral-800 text-neutral-400 px-2.5 py-1 rounded-md"
+                    className="text-xs bg-neutral-100 text-neutral-600 px-2.5 py-1 rounded-md dark:bg-neutral-800 dark:text-neutral-400"
                   >
                     {tag}
                   </span>
@@ -79,6 +79,7 @@ const Testimonials = ({ id }) => {
 
               {/* Links */}
               <div className="flex gap-3 mt-auto">
+                {project.livedemo && (   
                 <a
                   href={project.liveUrl}
                   className="flex items-center gap-1.5 text-sm text-orange-400 hover:text-orange-300 transition-colors font-medium"
@@ -86,9 +87,10 @@ const Testimonials = ({ id }) => {
                   <ExternalLink size={14} />
                   Live Demo
                 </a>
+                )}
                 <a
                   href={project.githubUrl}
-                  className="flex items-center gap-1.5 text-sm text-neutral-400 hover:text-neutral-200 transition-colors font-medium"
+                  className="flex items-center gap-1.5 text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-medium dark:text-neutral-400 dark:hover:text-neutral-200"
                 >
                   <Github size={14} />
                   GitHub

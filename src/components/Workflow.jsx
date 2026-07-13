@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Workflow = ({ id }) => {
     return (
-        <div id={id} className="mt-24 border-b border-neutral-800 pb-24">
+        <div id={id} className="mt-24 border-b border-neutral-300 pb-24 dark:border-neutral-800">
             {/* Header */}
             <div className="text-center mb-16">
                 <motion.span
@@ -17,7 +17,7 @@ const Workflow = ({ id }) => {
                 </motion.span>
                 <div className="overflow-hidden">
                     <motion.h2
-                        className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
+                        className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100"
                         initial={{ x: -100 }}
                         whileInView={{ x: 0 }}
                         transition={{ duration: 0.9 }}
@@ -30,7 +30,7 @@ const Workflow = ({ id }) => {
                     </motion.h2>
                 </div>
                 <motion.p
-                    className="mt-5 max-w-xl mx-auto text-neutral-400 text-lg"
+                    className="mt-5 max-w-xl mx-auto text-neutral-600 text-lg dark:text-neutral-400"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.2 }}
@@ -44,7 +44,7 @@ const Workflow = ({ id }) => {
             {/* Steps */}
             <div className="relative max-w-4xl mx-auto">
                 {/* Vertical line */}
-                <div className="absolute left-8 sm:left-1/2 top-0 bottom-0 w-px bg-neutral-800 -translate-x-1/2 hidden sm:block" />
+                <div className="absolute left-8 sm:left-1/2 top-0 bottom-0 w-px bg-neutral-300 -translate-x-1/2 hidden sm:block dark:bg-neutral-800" />
 
                 <div className="flex flex-col gap-12">
                     {processSteps.map((step, index) => (
@@ -55,7 +55,7 @@ const Workflow = ({ id }) => {
                         >
                             {/* Step content */}
                             <motion.div
-                                className={`flex-1 p-6 rounded-xl border border-neutral-800 bg-neutral-900/50 hover:border-orange-500/30 transition-all duration-300 ${index % 2 === 0
+                                className={`flex-1 p-6 rounded-xl border border-neutral-200 bg-white/80 hover:border-orange-500/30 transition-all duration-300 dark:border-neutral-800 dark:bg-neutral-900/50 ${index % 2 === 0
                                         ? "sm:text-right sm:items-end"
                                         : "sm:text-left sm:items-start"
                                     }`}
@@ -67,19 +67,19 @@ const Workflow = ({ id }) => {
                                 }}
                                 viewport={{ once: false, amount: 0.05 }}
                             >
-                                <span className="text-5xl font-black text-neutral-800 leading-none">
+                                <span className="text-5xl font-black text-neutral-300 leading-none dark:text-neutral-800">
                                     {step.step}
                                 </span>
-                                <h3 className="text-xl font-semibold mt-2 mb-2 text-neutral-100">
+                                <h3 className="text-xl font-semibold mt-2 mb-2 text-neutral-900 dark:text-neutral-100">
                                     {step.title}
                                 </h3>
-                                <p className="text-neutral-400 leading-relaxed">
+                                <p className="text-neutral-600 leading-relaxed dark:text-neutral-400">
                                     {step.description}
                                 </p>
                             </motion.div>
 
                             {/* Center dot */}
-                            <div className="hidden sm:flex w-5 h-5 rounded-full bg-orange-500 border-4 border-neutral-950 z-10 flex-shrink-0 mt-8" />
+                            <div className="hidden sm:flex w-5 h-5 rounded-full bg-orange-500 border-4 border-white z-10 flex-shrink-0 mt-8 dark:border-neutral-950" />
 
                             {/* Spacer for opposite side */}
                             <div className="flex-1 hidden sm:block" />

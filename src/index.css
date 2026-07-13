@@ -4,8 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-:root{
+:root {
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
@@ -14,19 +13,25 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html.dark {
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  color-scheme: light;
+}
+
+html,
+body {
   overflow-x: hidden;
 }
 
-/* @keyframes slide {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+body {
+  margin: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.animate-slide {
-  animation: slide 2s linear infinite;
-} */
+#root {
+  min-height: 100vh;
+}

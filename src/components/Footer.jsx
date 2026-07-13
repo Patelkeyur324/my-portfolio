@@ -9,7 +9,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="contact" className="mt-24 border-t border-neutral-800 pt-16 pb-10">
+    <footer id="contact" className="mt-24 border-t border-neutral-300 pt-16 pb-10 dark:border-neutral-800">
       {/* Contact CTA */}
       <motion.div
         className="text-center mb-14"
@@ -23,7 +23,7 @@ const Footer = () => {
         </span>
         <div className="overflow-hidden">
           <motion.h2
-            className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
+            className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100"
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.9 }}
@@ -36,7 +36,7 @@ const Footer = () => {
           </motion.h2>
         </div>
         <motion.p
-          className="text-neutral-400 max-w-md mx-auto text-lg mb-8"
+          className="text-neutral-600 max-w-md mx-auto text-lg mb-8 dark:text-neutral-400"
           initial={{ x: 100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.9 }}
@@ -66,7 +66,7 @@ const Footer = () => {
 
           <motion.a
             href="tel:+917859892741"
-            className="inline-flex items-center gap-2 border border-neutral-600 py-3 px-8 rounded-md font-semibold text-neutral-300"
+            className="inline-flex items-center gap-2 border border-neutral-300 py-3 px-8 rounded-md font-semibold text-neutral-700 dark:border-neutral-600 dark:text-neutral-300"
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(255, 255, 255, 0.15)" }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 300 }}
@@ -79,7 +79,7 @@ const Footer = () => {
       </motion.div>
 
       {/* Divider */}
-      <div className="border-t border-neutral-800 mb-8" />
+      <div className="border-t border-neutral-300 mb-8 dark:border-neutral-800" />
 
       {/* Bottom bar */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -89,16 +89,16 @@ const Footer = () => {
 
         {/* Contact info */}
         <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-neutral-500">
-  <a href="mailto:keyurpatel322004@gmail.com" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
-    <Mail size={14} />
-    keyurpatel322004@gmail.com
-  </a>
-  <span className="hidden sm:block">|</span>
-  <a href="tel:+917859892741" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
-    <Phone size={14} />
-    +91 78598 92741
-  </a>
-</div>
+          <a href="mailto:keyurpatel322004@gmail.com" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
+            <Mail size={14} />
+            keyurpatel322004@gmail.com
+          </a>
+          <span className="hidden sm:block">|</span>
+          <a href="tel:+917859892741" className="hover:text-orange-400 transition-colors duration-200 flex items-center gap-1">
+            <Phone size={14} />
+            +91 78598 92741
+          </a>
+        </div>
 
         {/* Social links */}
         <div className="flex items-center gap-3">
@@ -107,7 +107,7 @@ const Footer = () => {
               key={i}
               href={link.href}
               aria-label={link.label}
-              className="w-9 h-9 flex items-center justify-center rounded-lg border border-neutral-700 text-neutral-400 hover:border-orange-500 hover:text-orange-400 transition-all duration-200"
+              className="w-9 h-9 flex items-center justify-center rounded-lg border border-neutral-300 text-neutral-600 hover:border-orange-500 hover:text-orange-400 transition-all duration-200 dark:border-neutral-700 dark:text-neutral-400"
             >
               {link.icon}
             </a>
